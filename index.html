@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+<form class="w-[100px] mx-auto mt-[40px] flex gap-[10px] ">
+    <input class="border-2   border-blue-500" type="text" name="text" id="input_text">
+    <button id="search" class="px-[15px]  pt-[5px] bg-[blue] text-[white] ">search</button>
+    <div id="input_div" class="bg-gray-400 w-[400px] p-8 mx-auto hidden "></div>
+</form>
+<div class="us w-[1284px] mx-auto grid grid-cols-4 gap-[24px] mt-[40px] items-start" id="data"></div>
+<script type="module" src="main.js"></script>
+</body>
+</html>
