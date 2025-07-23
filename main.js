@@ -23,6 +23,7 @@ us.forEach((elem) => {
     data.append(div);
 })
 input_search.addEventListener("input", (event) => {
+    input_div.innerHTML = "";
     let result = us.filter((elem) => {
         return elem.text.toLowerCase().includes(event.target.value.toLowerCase());
     });
@@ -31,4 +32,9 @@ input_search.addEventListener("input", (event) => {
     if (input_search.value.length === 0) {
         input_div.classList.add("hidden");
     }
+    result.forEach((item) => {
+        let div = document.createElement("div");
+        div.innerHTML = `<div class="p-1">${item.text}</div>`;
+        input_div.appendChild(div);
+    })
 });
